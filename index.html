@@ -1,11 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TU PELUDO</title>
+
+    <!--enlace de estilos css-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--logo-->
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon">
+
+    <style>
+        .info-box {
+            background-color: #ebf1f7; 
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            width: 200px; /* Ajusta el ancho */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Asegura que el texto no se salga */
+        }
+    
+        .info-box a {
+            display: block; /* Asegura que el enlace ocupe toda la línea */
+            text-decoration: none; /* Quita el subrayado del enlace */
+            color: #007bff; /* Color del enlace */
+            overflow: hidden; 
+            
+        }
+    
+        @media (max-width: 600px) {
+            .info-box {
+                width: 100%; 
+            }
+        }
+    </style>
 </head>
 <body>
+    <header
+    <div class="encabezado">      
+          <img src="./assets/marca.jpg" class="img-thumbnail" alt="marca" style="width: 100px; height: 100px; border-radius: 50%;">
+        <h1>BIENVENIDO AL CUIDADO DE TU PELUDITO</h1>
+    </div>
+    </header>
+    
+    <div class="galeria">
+        <div class="galeria-item">
+            <img src="./assets/foto.jpeg" alt="animal1">
+            <p class="galeria-texto" style="color: blueviolet;">BELLEZA</p>
+        </div>
+        <div class="galeria-item">
+            <img src="./assets/foto1.jpeg" alt="animal2">
+            <p class="galeria-texto" style="color: blueviolet;">CUIDADO</p>
+        </div>
+            <div class="galeria-item">
+            <img src="./assets/foto2.jpeg" alt="animal3">
+            <p class="galeria-texto" style="color: blueviolet;">BIENESTAR</p>
+        </div>
+        <div class="galeria-item">
+            <img src="./assets/foto3.jpeg" alt="animal4">
+            <p class="galeria-texto" style="color: blueviolet;">AMOR</p>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; color: rgb(249, 249, 249); text-decoration: underline; text-decoration-color: #f796cd;">
+        Cuidado y Belleza para Tu Mascota
+    </h2>
+ <nav class="contenido">
+ <aside class="container" >
+     <div>
+        <h3 class="title">ÍNDICE</h2>
+        <div class="circles">
+            <div class="circle"><a href="#mision">MISION</a></div>
+            <div class="circle"><a href="#vision">VISIÓN</a></div>
+            <div class="circle"><a href="#servicios">SERVICIOS</a></div>
+        </div>
+    </div>
+    </aside>
+</nav>
+
+        <div style="display: flex; justify-content: space-between; padding: 20px; text-align: center;">
+            <section class="inicio" style="flex: 1; margin-right: 20px;">
+                <h2>¿QUIÉNES SOMOS?</h2>
+                <div class="personal">
+                    <img src="./assets/personal.jpg" alt="mi foto" style="width: 200px; height: 200px; border-radius: 50%;">
+                <p>Somos un equipo de profesionales dedicados al cuidado y bienestar de tus mascotas. Nos apasiona brindar un servicio de calidad y amor a cada uno de nuestros peluditos. Nuestro objetivo es garantizar que cada visita sea una experiencia positiva y placentera tanto para ti como para tu mascota.</p>
+            </section>
+
+     <table class="horario" style="flex: 0 0 300px;"> 
+        <thead>
+        <tr>
+        <th colspan="2" style="text-align: center;">HORARIOS DE ATENCIÓN</th>
+      <tr>
+         <th>DÍA</th>
+        <th>HORARIO</th>
+         </tr>
+          </thead>
+        <tbody>
+        <tr>
+       <td>Lunes</td>
+         <td>7:00 AM - 6:00 PM</td>
+          </tr>
+         <tr>
+          <td>Martes</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+         <tr>
+           <td>Miércoles</td>
+           <td>8:00 AM - 5:00 PM</td>                                  
+         </tr>
+         <tr>
+         <td>Jueves</td>
+          <td>9:00 AM - 6:00 PM</td>
+          </tr>           
+         <tr>
+         <td>Viernes</td>
+          <td>9:00 AM - 8:00 PM</td>
+          </tr>
+          <tr>
+         <td>Sábado</td>
+         <td>10:00 AM - 4:00 PM</td>
+         </tr>
+          </tbody>
+        </table>
+        </div>
+        </div>
+    <br/>
+
+    <!-----------informacion indice------------->
+ <div id="mision">
+    <nav>
+<h4>NUESTRA MISIÓN</h3>
+  <p>Es ofrecer un espacio seguro y amigable donde las mascotas puedan recibir cuidados profesionales y a medida. Estamos dedicados a emplear productos de la mejor calidad y a aplicar métodos innovadores para garantizar que cada visita sea una experiencia satisfactoria.</p>
+ </div>
+</nav>
+
+<!------------------video------------------->
+<nav class="video" style="text-align: center;">
+<h5>siempre el mejor cuidado</h5>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_Xhc0D-E2RU?si=BqrRfV4whso5DpWH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</nav>
+
+<div id="vision"class="circles">
+    <nav>
+     <h4> NUESTRA VISIÓN</h3>
+                <p>Imaginar un mundo en el que cada mascota es apreciada y tratada como un integrante de la familia. Nuestra meta es ser la primera elección para servicios de cuidado y estética animal en tu ciudad o región fijando un estándar de calidad en la industria.</p>
+</div>
+</nav>
+
+
+<div id="servicios"class="circles">
+    <nav>
+    <aside><i class="fa-solid fa-pump-soap" style="color: #B197FC; " ></i>
+     <h4>NUESTROS SERVICIOS</h3>
+                <ul><i class="fa-solid fa-shower" style="color: #74C0FC;"></i>
+                    <li>Corte y estilo profesional para que tu mascota luzca espectacular.</li>
+                    <li>Baños relajantes y tratamientos de spa para el bienestar de tu compañero.</li>
+                    <li>Limpieza dental y cuidados preventivos para una sonrisa saludable.</li>
+                    <li>Nutrición y dieta.</li>
+                    <li>Entrenamiento y Comportamiento.</li>
+                </ul>
+                <i class="fa-solid fa-soap" style="color: #f2b0e6;align-items: end;"></i>
+                </aside>
+</div>
+</nav>
+
+<!------------------tituto con iconos------------------->
+
+<a href="agenda.html" target="_blank" rel="noopener noreferrer" class="button"> <i class="bi bi-arrow-right"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg> AGENDA TU CITA AQUÍ
+        <i class="bi bi-arrow-left"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+    </a>
+    </svg>
+    <br/>
+    <!------------------contacto---------------------------->
+    <aside class="contac">
+    <h4>Contacto <i class="bi bi-chat-right-heart"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-heart" viewBox="0 0 16 16">
+  <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+  <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+</svg></h2>
+    <p>Si tienes alguna pregunta o deseas más información, no dudes en contactarnos por nuestros canales de atencion:</p>
+
+    <section style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 20px;">
+        <div class="info-box">
+            <b>Ubicación</b>
+            <a href="#">calle 72 # 45-8</a>
+        </div>
+        <div class="info-box">
+            <b>Teléfono</b>
+            <a href="tel:">3132705689</a>
+        </div>
+        <div class="info-box">
+            <b>REDES</b>
+            <a href="#">instagram</a>
+        </div>
+        <div class="info-box">
+            <b>Correo</b>
+            <a href="mailto:tuspeludos@gmail.com">peludos@gmail.com</a>
+        </div>
+    </section>
+</aside>
+
+    <!--enlaces de javascript-->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>
