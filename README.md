@@ -8,10 +8,12 @@ __Mi lema__
 
 ~~aprendiendo ando y mejorando estoy~~
 ____________________________________________________
-AUTORA
+AUTORA:
+
 <img src="./assets/autora.jpg" alt="autoria luisa fer"/>
 >>LUISA FERNANDA BERNAL GORDILLO
 -------------------------------------------
 # NO DUDES EN CONTACTARME...
-[figma](https://figma.com/@luisafernanda4)
+[figma](https://figma.com/@luisafernanda4)..
+
 [github](https://github.com/lufernanda-05)
