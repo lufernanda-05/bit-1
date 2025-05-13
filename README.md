@@ -10,7 +10,7 @@ __Mi lema__
 ____________________________________________________
 AUTORA:
 
-<img src="./assets/autora.jpg" alt="autoria luisa fer"/>
+<img src="./assets/fotomia.jpg" alt="autoria luisa fer"/>
 >>LUISA FERNANDA BERNAL GORDILLO
 -------------------------------------------
 # NO DUDES EN CONTACTARME...
