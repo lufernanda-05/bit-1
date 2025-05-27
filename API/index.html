@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, 
+  initial-scale=1" />
+   <link rel="stylesheet" href="styles.css">
+  <title>API</title>
+  <style></style>
+</head>
+<body>
+  <h1>API DE USUARIOS ALEATORIOS</h1>
+    <p>Este es un ejemplo de cómo usar la API de Random User Generator para obtener información de usuarios aleatorios. y esta es la información que se extrae:</p>
+
+<div class="user-card">
+  <img src="" alt="Foto del usuario" id="user-img" />
+  <h2 id="user-name">Cargando usuario...</h2>
+  <p id="user-email"></p>
+  <p id="user-country"></p>
+  <p id="user-dob"></p> <!-- Fecha de nacimiento -->
+   <p id="user-phone"></p>
+  <button id="load-user">Cargar otro usuario</button>
+</div>
+
+<script>
+  // Función para obtener un usuario aleatorio desde la API
+    async function fetchUser() {
+      try {// Esperamos la respuesta de la API
+        const response = await fetch('https://randomuser.me/api');
+        if (!response.ok) {
+          throw new Error('Error en la respuesta de la API');
+        }
+        // Convertimos la respuesta a JSON
+        const data = await response.json();
+        // Tomamos el primer usuario del arreglo
+        const user = data.results[0];
+        // mostramos los datos completos
+        const fullName = `${user.name.title} ${user.name.first} ${user.name.last}`;
+        // Extraemos propiedades
+        const email = user.email;
+        const country = user.location.country;
+        const picture = user.picture.large;
+        const phone = user.phone; 
+
+        document.getElementById('user-img').src = picture;
+        document.getElementById('user-img').alt = `Foto de ${fullName}`;
+        document.getElementById('user-name').textContent = fullName;
+        document.getElementById('user-email').textContent = `Correo: ${email}`;
+        document.getElementById('user-country').textContent = `País: ${country}`;
+        document.getElementById('user-phone').textContent = `Teléfono: ${phone}`;
+        // En caso de error, mostramos un mensaje
+      } catch (error) {
+        document.getElementById('user-name').textContent = 'No se pudo cargar el usuario';
+        document.getElementById('user-email').textContent = '';
+        document.getElementById('user-country').textContent = '';
+        document.getElementById('user-img').src = '';
+        console.error('Error al obtener datos:', error);
+      }
+    }
+    //boton para cargar otro usuario
+    document.getElementById('load-user').addEventListener('click', fetchUser);
+    // Cargamos un usuario cuando se recarga la página
+    fetchUser();
+</script>
+</body>
+</html>
+
+

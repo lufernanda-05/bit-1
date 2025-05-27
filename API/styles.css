@@ -1,0 +1,80 @@
+  body {
+     font-family: 'Roboto', sans-serif; /* Cambia la fuente */
+  background: linear-gradient(to right, #d9e8ef, #ddd0ed); 
+    }
+    h1 {
+      background: linear-gradient(blue, orange);
+      text-align: center;
+      border-radius: 10px;
+    }
+    p {
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .user-card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+}
+    .user-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      max-width: 320px;
+      width: 90%;
+      margin: 0 auto;
+      transition: transform 0.3s; 
+    }
+    .user-card img {
+      padding: 10px;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid #5ae7e7; /* Borde amarillo */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    }
+    .user-card h2 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      color: #333;
+    }
+    .user-card p {
+      margin: 5px 0;
+      color: #555;
+      font-size: 16px;
+      word-wrap: break-word;
+    }
+    button {
+      margin-top: 15px;
+      background: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+      width: 100%;
+    }
+    button:hover {
+      background: #0056b3;
+      transform: translateY(-2px); /* Efecto de elevar el botón al pasar el mouse */
+    }
+    /* Estilos responsivos para pantallas pequeñas */
+    @media (max-width: 400px) {
+      .user-card {
+        padding: 15px;
+      }
+      .user-card h2 {
+        font-size: 18px;
+      }
+      .user-card p {
+        font-size: 14px;
+      }
+      button {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
